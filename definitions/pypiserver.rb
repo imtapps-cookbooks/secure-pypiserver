@@ -3,6 +3,7 @@ define :pypiserver do
 
   template "#{node.nginx.dir}/sites-available/pypiserver" do
     source "pypiserver.erb"
+    cookbook 'secure-pypiserver-cookbook'
     owner "root"
     group "root"
     mode 0644
