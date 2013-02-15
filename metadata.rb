@@ -1,7 +1,7 @@
 name "secure-pypiserver-cookbook"
 maintainer "mattjmorrison"
 maintainer_email "mattjmorrison@mattjmorrison.com"
-licence "MIT"
+license "MIT"
 description "Installs pypiserver behind SSL and Basic Auth"
 version "0.0.1"
 recipe "pypiserver", "Installs pypiserver behind SSL and Basic Auth"
