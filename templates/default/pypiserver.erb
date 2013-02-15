@@ -1,0 +1,14 @@
+ssl_certificate      <%= @ssl_cert %>;
+ssl_certificate_key  <%= @ssl_key %>;
+
+server {
+  listen 443 default_server ssl;
+  server_name <%= @server_name %>;
+
+  location / {
+     auth_basic "Restricted";
+     auth_basic_user_file "<%= @auth_basic_file %>";
+     proxy_pass  http://localhost:8080/;
+  }
+
+}
