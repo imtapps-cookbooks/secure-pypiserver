@@ -1,4 +1,4 @@
-name "secure-pypiserver-cookbook"
+name "secure-pypiserver"
 maintainer "mattjmorrison"
 maintainer_email "mattjmorrison@mattjmorrison.com"
 license "MIT"
